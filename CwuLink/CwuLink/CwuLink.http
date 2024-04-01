@@ -1,0 +1,6 @@
+@CwuLink_HostAddress = http://localhost:5262
+
+GET {{CwuLink_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
