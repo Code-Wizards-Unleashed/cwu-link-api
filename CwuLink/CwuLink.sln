@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CwuLink", "CwuLink\CwuLink.csproj", "{A6B9F035-3202-4962-BAD7-549C05256D84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CwuLink", "CwuLink\CwuLink.csproj", "{A6B9F035-3202-4962-BAD7-549C05256D84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CwuLink.Tests", "CwuLink.Tests\CwuLink.Tests.csproj", "{7C9D41F5-BFFA-49A9-9A53-8A2F0680629A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A6B9F035-3202-4962-BAD7-549C05256D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6B9F035-3202-4962-BAD7-549C05256D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6B9F035-3202-4962-BAD7-549C05256D84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C9D41F5-BFFA-49A9-9A53-8A2F0680629A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C9D41F5-BFFA-49A9-9A53-8A2F0680629A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C9D41F5-BFFA-49A9-9A53-8A2F0680629A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C9D41F5-BFFA-49A9-9A53-8A2F0680629A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
