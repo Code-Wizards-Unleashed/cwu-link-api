@@ -27,10 +27,12 @@ public class Person
 
     public IReadOnlyCollection<FriendshipRequest> FriendshipRequests => _friendshipRequests.AsReadOnly();
 
-    public void AddFriend(Person friend)
+    public void AddFriend(FriendshipRequest friendShipRequest)
     {
+        var friend = friendShipRequest.Sender;
         _friends.Add(friend);
         friend._friends.Add(this);
+        _friendshipRequests.Remove(friendShipRequest);
     }
 
     public void SendFriendshipRequest(Person person)
