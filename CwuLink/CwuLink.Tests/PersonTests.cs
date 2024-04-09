@@ -63,4 +63,20 @@ public class PersonTests
         // Assert
         (anotherPerson.FriendshipRequests.Count - initialAnotherPersonFriendshipRequestsCount).Should().Be(1);
     }
+
+
+
+    [Fact]
+    public void SendFriendshipRequest_ToAnotherPerson_ShouldAddFriendshipRequestFromCorrespondPerson()
+    {
+        // Arrange
+        var person = new Person("Michael", 27);
+        var anotherPerson = new Person("Tom", 28);
+
+        // Act
+        person.SendFriendshipRequest(anotherPerson);
+
+        // Assert
+        anotherPerson.FriendshipRequests.FirstOrDefault().Sender.Should().Be(person);
+    }
 }

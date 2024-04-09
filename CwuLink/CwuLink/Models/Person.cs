@@ -14,6 +14,7 @@ public class Person
         Age = age;
         Blog = new Blog();
         _friends = new List<Person>();
+        _friendshipRequests = new List<FriendshipRequest>();
     }
 
     public string Name { get; private set; }
@@ -34,6 +35,6 @@ public class Person
 
     public void SendFriendshipRequest(Person person)
     {
-
+        person._friendshipRequests.Add(new FriendshipRequest(this));
     }
 }
