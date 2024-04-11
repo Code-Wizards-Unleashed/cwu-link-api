@@ -1,5 +1,6 @@
 ﻿
 using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace CwuLink.Models;
 
@@ -38,5 +39,39 @@ public class Person
         _friends.Add(friend);
         friend._friends.Add(this);
         _friendshipRequests.Remove(friendShipRequest);
+    }
+
+    public void PublishPost(Post post)
+    {
+        this.Blog.CreateNewPost(post);
+    }
+    
+    public void DeletePost(Post post)
+    {
+        if (post.Author == this)
+        {
+            this.Blog.DeletePost(post);
+        }
+        else
+        {
+            throw new ArgumentException("Trying to delete foreign comment");
+        }
+    }
+
+    public void AddComment(Post post, Comment comment)
+    {
+        post.AddComment(comment);
+    }
+
+    public void DeleteComment(Post post, Comment comment)
+    {
+        if (comment.Author == this)
+        {
+            post.DeleteComment(comment);
+        }
+        else
+        {
+            throw new ArgumentException("Trying to delete foreign comment");
+        }
     }
 }

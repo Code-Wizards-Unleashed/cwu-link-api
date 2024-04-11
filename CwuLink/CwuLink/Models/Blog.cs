@@ -1,4 +1,5 @@
-﻿namespace CwuLink.Models;
+﻿
+namespace CwuLink.Models;
 
 public class Blog
 {
@@ -17,5 +18,10 @@ public class Blog
     public void CreateNewPost(Post post)
     {
         _posts.Add(post);
+    }
+
+    public void DeletePost(Post post)
+    {
+        _posts.Remove(post);
     }
 }
