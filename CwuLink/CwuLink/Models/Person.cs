@@ -12,7 +12,7 @@ public class Person
     {
         Name = name;
         Age = age;
-        Blog = new Blog();
+        Blog = new Blog(this);
         _friends = new List<Person>();
         _friendshipRequests = new List<FriendshipRequest>();
     }
