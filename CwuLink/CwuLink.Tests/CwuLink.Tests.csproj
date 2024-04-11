@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CwuLink.Domain\CwuLink.Domain.csproj" />
     <ProjectReference Include="..\CwuLink\CwuLink.csproj" />
   </ItemGroup>
 

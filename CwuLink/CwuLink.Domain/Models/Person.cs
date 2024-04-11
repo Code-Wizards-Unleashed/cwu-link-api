@@ -1,8 +1,4 @@
-﻿
-using System.Collections.Generic;
-using System.Xml.Linq;
-
-namespace CwuLink.Models;
+﻿namespace CwuLink.Domain.Models;
 
 public class Person
 {

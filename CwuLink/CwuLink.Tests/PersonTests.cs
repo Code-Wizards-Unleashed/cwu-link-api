@@ -1,7 +1,6 @@
 using AutoFixture;
-using CwuLink.Models;
+using CwuLink.Domain.Models;
 using FluentAssertions;
-using System;
 
 namespace CwuLink.Tests;
 

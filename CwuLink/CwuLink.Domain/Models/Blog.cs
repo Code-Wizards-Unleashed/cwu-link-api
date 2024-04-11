@@ -1,5 +1,4 @@
-﻿
-namespace CwuLink.Models;
+﻿namespace CwuLink.Domain.Models;
 
 public class Blog
 {
